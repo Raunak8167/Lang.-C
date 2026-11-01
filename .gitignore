@@ -7,12 +7,12 @@
 *.so
 *.dll
 
-# Debug and temporary files
+# Debug and temporary build files
 *.ilk
 *.pdb
 *.tmp
 
 # Editor and operating-system files
 .vs/
- .DS_Store
+.DS_Store
 Thumbs.db
