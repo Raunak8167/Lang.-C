@@ -1,0 +1,18 @@
+# Compiled C programs
+*.exe
+*.out
+*.o
+*.obj
+*.a
+*.so
+*.dll
+
+# Debug and temporary files
+*.ilk
+*.pdb
+*.tmp
+
+# Editor and operating-system files
+.vs/
+ .DS_Store
+Thumbs.db
