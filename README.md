@@ -12,6 +12,7 @@ This repository documents both the concepts being studied and progress made thro
 | `02-Pattern-Printing` | Pattern-printing exercises |
 | `03-Arrays` | Array and character-array practice |
 | `04-Practice-Sets` | Programs grouped by original practice day |
+  
 
 The original practice-day grouping is retained inside `04-Practice-Sets` so the history of the exercises remains understandable. Some filenames such as `Problem1.c` are intentionally retained from the original practice sets.
 
@@ -52,6 +53,7 @@ gcc 01-Basics/Input-Output/sum.c -o sum
 - Loops and pattern printing
 - Arrays and character arrays
 - Small problem-solving exercises
+- Functions
 
 The collection will expand as more topics are covered, including functions, recursion, multidimensional arrays, and pointers.
 
