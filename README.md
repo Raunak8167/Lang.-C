@@ -8,23 +8,41 @@ This repository documents both the concepts being studied and progress made thro
 
 | Folder | Contents |
 |---|---|
-| 01-Basics | Introductory programs, input/output, and operators |
-| 02-Pattern-Printing | Pattern-printing exercises |
-| 03-Arrays | Array and character-array practice |
-| 04-Practice-Sets | Programs grouped by original practice day |
-| 05-Additional-Practice | Standalone exercises whose original topic grouping is unclear |
+| `01-Basics` | Introductory programs and input/output |
+| `02-Pattern-Printing` | Pattern-printing exercises |
+| `03-Arrays` | Array and character-array practice |
+| `04-Practice-Sets` | Programs grouped by original practice day |
 
-> Folder names describe the organization of the exercises; individual programs remain learning exercises rather than production-ready libraries.
+The original practice-day grouping is retained inside `04-Practice-Sets` so the history of the exercises remains understandable. Some filenames such as `Problem1.c` are intentionally retained from the original practice sets.
 
 ## How to compile and run
 
 You need a C compiler such as GCC.
 
-Compile: gcc path/to/program.c -o program
+Compile a source file:
 
-Run on Linux/macOS: ./program
+```bash
+gcc path/to/program.c -o program
+```
 
-Run on Windows PowerShell: gcc path/to/program.c -o program.exe, then ./program.exe
+Run on Linux/macOS:
+
+```bash
+./program
+```
+
+Run on Windows PowerShell:
+
+```powershell
+gcc path/to/program.c -o program.exe
+./program.exe
+```
+
+For example:
+
+```bash
+gcc 01-Basics/Input-Output/sum.c -o sum
+```
 
 ## Topics represented
 
