@@ -1,8 +1,8 @@
 # C Programming Journey
 
-A practical collection of C programs, exercises, pattern problems, and experiments created while learning the C programming language.
+A topic-wise collection of C programs, lecture exercises, pattern problems, and practice sets. This repository records the progression from basic syntax and control flow to functions and problem-solving.
 
-This repository documents both the concepts being studied and progress made through hands-on problem solving.
+The repository currently contains **74 C source files**. Some are completed exercises; a small number are works in progress and are identified below.
 
 ## Repository structure
 
@@ -12,7 +12,6 @@ This repository documents both the concepts being studied and progress made thro
 | `02-Pattern-Printing` | Pattern-printing exercises |
 | `03-Arrays` | Array and character-array practice |
 | `04-Practice-Sets` | Programs grouped by original practice day |
-  
 
 The original practice-day grouping is retained inside `04-Practice-Sets` so the history of the exercises remains understandable. Some filenames such as `Problem1.c` are intentionally retained from the original practice sets.
 
@@ -23,7 +22,7 @@ You need a C compiler such as GCC.
 Compile a source file:
 
 ```bash
-gcc path/to/program.c -o program
+gcc -std=c11 path/to/program.c -o program
 ```
 
 Run on Linux/macOS:
@@ -35,14 +34,20 @@ Run on Linux/macOS:
 Run on Windows PowerShell:
 
 ```powershell
-gcc path/to/program.c -o program.exe
+gcc -std=c11 path/to/program.c -o program.exe
 ./program.exe
+```
+
+Some programs use functions from `math.h` (for example, `pow()`, `sin()`, or `acos()`). On GCC toolchains that require explicit math-library linking, add `-lm`:
+
+```bash
+gcc -std=c11 path/to/program.c -o program -lm
 ```
 
 For example:
 
 ```bash
-gcc 01-Basics/Input-Output/sum.c -o sum
+gcc -std=c11 01-Basics/Input-Output/sum.c -o sum
 ```
 
 ## Topics represented
@@ -53,17 +58,17 @@ gcc 01-Basics/Input-Output/sum.c -o sum
 - Loops and pattern printing
 - Arrays and character arrays
 - Small problem-solving exercises
-- Functions
 
 The collection will expand as more topics are covered, including functions, recursion, multidimensional arrays, and pointers.
 
-## Repository principles
+## Repository conventions
 
-- Keep C source code as the primary artifact.
-- Compile programs locally; generated executables are not committed.
-- Prefer descriptive filenames when the purpose of a program is clear.
-- Keep practice solutions simple and preserve the learning process.
+- Keep C source files as the primary content.
+- Compile programs locally; generated executables and build output should not be committed.
+- Use descriptive filenames for new exercises.
+- Keep independent exercises in separate files because each may define its own `main()`.
+- Preserve the day-wise grouping in `04-Practice-Sets/`.
 
 ## About
 
-This is a personal learning repository maintained alongside undergraduate computer science studies. It is intended as a transparent record of practice, experimentation, and improvement.
+A personal C programming practice repository maintained alongside undergraduate computer science studies. It is intended as a record of concepts learned, problems attempted, and progress over time.
