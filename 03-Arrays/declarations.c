@@ -2,6 +2,6 @@
 int main()
 {
     int n;
-    printf("raunak is gay ");
+    printf("");
     return 0;
 }
