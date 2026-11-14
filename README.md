@@ -1,25 +1,26 @@
-# C Programming Journey
+# C Programming Repository
 
-A topic-wise collection of C programs, lecture exercises, pattern problems, and practice sets. This repository records the progression from basic syntax and control flow to functions and problem-solving.
-
-The repository currently contains **74 C source files**. Some are completed exercises; a small number are works in progress and are identified below.
+A personal collection of C programs, exercises, and experiments created while learning and practising the C programming language. The repository grows as new concepts and problem-solving exercises are added.
 
 ## Repository structure
 
 | Folder | Contents |
 |---|---|
-| `01-Basics` | Introductory programs and input/output |
-| `02-Pattern-Printing` | Pattern-printing exercises |
-| `03-Arrays` | Array and character-array practice |
-| `04-Practice-Sets` | Programs grouped by original practice day |
+| `01-Basics/` | Basic syntax and input/output |
+| `02-Pattern-Printing/` | Pattern-printing exercises using loops |
+| `03-Arrays/` | Array input/output, searching, reversing, pairs, triplets, and array problems |
+| `04-Practice-Sets/` | Day-wise practice questions, kept in their original sequence |
+| `05-Functions/` | User-defined functions, recursion, number problems, and function-based exercises |
+| `06-Two-Dimensional-Arrays/` | Matrix operations, transposition, rotation, and 2D-array exercises |
+| `07-Miscellaneous/` | Small experiments that do not fit the main topic folders |
 
-The original practice-day grouping is retained inside `04-Practice-Sets` so the history of the exercises remains understandable. Some filenames such as `Problem1.c` are intentionally retained from the original practice sets.
+The repository currently contains **102 C source files**.
 
-## How to compile and run
+## Compile and run
 
-You need a C compiler such as GCC.
+Use GCC or another C compiler. Compile each exercise separately because most source files are standalone programs with their own `main()` function.
 
-Compile a source file:
+Compile:
 
 ```bash
 gcc -std=c11 path/to/program.c -o program
@@ -38,37 +39,21 @@ gcc -std=c11 path/to/program.c -o program.exe
 ./program.exe
 ```
 
-Some programs use functions from `math.h` (for example, `pow()`, `sin()`, or `acos()`). On GCC toolchains that require explicit math-library linking, add `-lm`:
+For programs that use functions from `math.h`, add `-lm` when required by your compiler:
 
 ```bash
 gcc -std=c11 path/to/program.c -o program -lm
 ```
 
-For example:
+## Work in progress
 
-```bash
-gcc -std=c11 01-Basics/Input-Output/sum.c -o sum
-```
-
-## Topics represented
-
-- Basic input and output
-- Operators and expressions
-- Conditional logic
-- Loops and pattern printing
-- Arrays and character arrays
-- Small problem-solving exercises
-
-The collection will expand as more topics are covered, including functions, recursion, multidimensional arrays, and pointers.
+Some exercises are intentionally retained as incomplete practice tasks. Files ending in `_todo.c` are placeholders or unfinished implementations. A few matrix exercises are also partial implementations; check the source before treating them as complete.
 
 ## Repository conventions
 
-- Keep C source files as the primary content.
-- Compile programs locally; generated executables and build output should not be committed.
-- Use descriptive filenames for new exercises.
-- Keep independent exercises in separate files because each may define its own `main()`.
-- Preserve the day-wise grouping in `04-Practice-Sets/`.
+- Keep C source code as the main content.
+- Compile programs locally; executables and build output should not be committed.
+- Add new exercises to the most relevant topic folder.
+- Use descriptive filenames for new programs.
+- Keep day-wise assignments grouped under `04-Practice-Sets/`.
 
-## About
-
-A personal C programming practice repository maintained alongside undergraduate computer science studies. It is intended as a record of concepts learned, problems attempted, and progress over time.
